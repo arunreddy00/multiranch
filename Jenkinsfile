@@ -10,7 +10,7 @@ node('master')
     }
     stage('ContinuousDeployment')
     {
-        sh label: '', script: '''scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ubuntu@172.31.31.135:/var/lib/tomcat8/webapps/nagatest.war
+        sh label: '', script: '''scp /home/ubuntu/.jenkins/workspace/multiproject_master/webapp/target/webapp.war ubuntu@172.31.31.135:/var/lib/tomcat8/webapps/nagatest.war
 '''
     }
     
